@@ -141,7 +141,6 @@
     <div class="hero__action">
       <div class="hero__try-now text-small">
         <div>
-          <!-- <a href="#get-started" class="btn-conversion">Try Now</a> -->
           <LinkButton variant="primary" href="#get-started" size="large"
             >Try Now</LinkButton
           >

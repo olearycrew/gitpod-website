@@ -21,6 +21,7 @@
   import CardSmall from "$lib/components/card/card-small.svelte";
   import Header from "$lib/components/header.svelte";
   import Quotes from "$lib/components/quotes.svelte";
+  import LinkButton from "$lib/components/ui-library/LinkButton";
   import { quotes } from "$lib/contents/opensource";
 </script>
 
@@ -41,8 +42,11 @@
   fullWidth={true}
 >
   <div slot="content">
-    <a href="/contact/support" class="btn-conversion mt-x-small mb-medium"
-      >Apply now</a
+    <LinkButton
+      variant="primary"
+      size="large"
+      href="/contact/support"
+      class="mt-x-small mb-medium">Apply now</LinkButton
     >
     <Quotes {quotes} />
   </div>

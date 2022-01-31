@@ -13,6 +13,10 @@ title: Gitpod is now Open Source 🎉
   export const prerender = true;
 </script>
 
+<script>
+    import LinkButton from "$lib/components/ui-library/LinkButton"
+</script>
+
 <style>
     [class*="btn"] {
         @apply mt-xx-small;
@@ -37,9 +41,7 @@ In line with the [pets vs. cattle](http://cloudscaling.com/blog/cloud-computing/
 
 Sven will run a webinar next week on Thursday, where we will showcase how we use Gitpod internally at Gitpod and how much it improves our workflow. Hope to see you there!
 
-<a class="btn-conversion" href="https://us02web.zoom.us/webinar/register/5415977565541/WN_amoa6lnEQniLykXUYCDyBQ" target="_blank">
-    How Gitpod uses Gitpod
-</a>
+<LinkButton href="https://us02web.zoom.us/webinar/register/5415977565541/WN_amoa6lnEQniLykXUYCDyBQ" target="_blank" variant="primary" size="large">How Gitpod uses Gitpod</LinkButton>
 
 ## Gitpod Self-Hosted is Now Free
 
@@ -54,6 +56,4 @@ In case you want to host Gitpod on your own infrastructure or private cloud, sta
 
 Offering a paid plan for enterprises makes it possible for us to keep working towards building a new category in developer tooling, which completes modern DevOps pipelines. In the future we will add additional functionality to both the open source code as well our paid offering.
 
-<a class="btn-conversion" href="/self-hosted">
-    Start for free
-</a>
+<LinkButton href="/self-hosted" variant="primary" size="large">Start for Free</LinkButton>

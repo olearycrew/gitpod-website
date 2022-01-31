@@ -1,5 +1,6 @@
 <script lang="ts">
   import Section from "./section.svelte";
+  import LinkButton from "$lib/components/ui-library/LinkButton";
   import type { ExploreSection } from "$lib/types/explore-section.type";
 
   export let contents: ExploreSection = {};
@@ -96,10 +97,12 @@
           {note}
         </p>
       {/if}
-      <a
+      <LinkButton
+        variant="primary"
+        size="large"
         href={link.href}
         target={link.href.startsWith("http") ? "_blank" : null}
-        class="btn-conversion">{link.text}</a
+        >{link.text}</LinkButton
       >
     </div>
     <div class="explore__illustration w-full">

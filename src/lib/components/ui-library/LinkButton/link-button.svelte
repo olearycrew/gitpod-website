@@ -1,10 +1,16 @@
 <script lang="ts">
+  import { current_component } from "svelte/internal";
+
+  import { forwardEventsBuilder } from "../utils/eventforwarder";
+
   let className: string = "";
   export { className as class };
-  export let variant: "primary" | "secondary" | "cta" | "conversion";
+  export let variant: "primary" | "secondary" | "cta";
   export let size: "small" | "medium" | "large" = "medium";
   export let disabled: boolean = false;
   export let href: string;
+
+  const forwardEvents = forwardEventsBuilder(current_component);
 </script>
 
 <style lang="postcss">
@@ -24,10 +30,6 @@
     @apply pointer-events-none text-gray-800;
   }
 
-  .conversion {
-    @apply leading-5 bg-orange-900 hover:bg-brand-hover focus:bg-brand-hover rounded-2xl min-w-[10rem];
-  }
-
   .medium {
     @apply py-2 px-6 text-btn-small leading-4 rounded-xl;
   }
@@ -42,11 +44,11 @@
 </style>
 
 <a
+  use:forwardEvents
   {href}
   {disabled}
   class:disabled
-  class:primary={variant === "primary"}
-  class="transition-all duration-[50ms] inline-block text-center shadow-light font-semibold bg-none text-black {className} {size}"
+  class="transition-all duration-[50ms] inline-block text-center shadow-light font-semibold bg-none text-black {variant} {className} {size}"
   {...$$restProps}
 >
   <slot />

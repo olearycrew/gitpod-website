@@ -1,6 +1,9 @@
 <script lang="ts">
   import { current_component } from "svelte/internal";
   import { forwardEventsBuilder } from "../utils/eventforwarder";
+  let className: string = "";
+  export { className as class };
+  export let size: "small" | "medium" | "large" = "medium";
   export let variant: "primary" | "secondary" | "cta" | "conversion";
   export let disabled: boolean = false;
 
@@ -21,11 +24,19 @@
   }
 
   .disabled {
-    @apply pointer-events-none text-gray-800;
+    @apply pointer-events-none text-gray-800 bg-sand-dark;
   }
 
-  .conversion {
-    @apply lg:py-[0.75rem] lg:px-8 text-p-medium leading-5 bg-orange-900 hover:bg-brand-hover focus:bg-brand-hover rounded-2xl min-w-[10rem];
+  .medium {
+    @apply py-2 px-6 text-btn-small leading-4 rounded-xl;
+  }
+
+  .large {
+    @apply py-3 px-8 text-p-medium leading-[1.25] min-w-[10rem] rounded-2xl;
+  }
+
+  .small {
+    @apply py-1 px-4 text-p-xsmall rounded-xl;
   }
 </style>
 
@@ -33,7 +44,7 @@
   use:forwardEvents
   {disabled}
   class:disabled
-  class="transition-all duration-[50ms] inline-block text-center py-[0.5rem] px-[1.5rem] shadow-light font-semibold bg-none rounded-xl text-btn-small  text-black leading-4 {variant}"
+  class="transition-all duration-[50ms] inline-block text-center shadow-light font-semibold bg-none text-black {className} {variant} {size}"
   {...$$restProps}
 >
   <slot />

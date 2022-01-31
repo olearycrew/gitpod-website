@@ -3,7 +3,7 @@ import type Component from "./button.svelte";
 export declare class Button extends Component {
   $$prop_def: Omit<
     Partial<svelte.JSX.HTMLAttributes<HTMLButtonElement>>,
-    "use"
+    "size"
   > &
     Component["$$prop_def"];
 
