@@ -21,7 +21,6 @@
   import SpinUp from "$lib/components/index/spin-up.svelte";
   import Section from "$lib/components/section.svelte";
   import Resources from "$lib/components/resources.svelte";
-  import Button from "$lib/components/ui-library/Button/index";
 </script>
 
 <OpenGraph
@@ -49,9 +48,3 @@
 <Testimonials {testimonials} />
 <GetStarted />
 <SpinUp />
-<Button
-  on:mouseover={() => {
-    alert("Hey");
-  }}
-  variant="conversion">TestButton</Button
->
