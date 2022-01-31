@@ -1,6 +1,10 @@
 <script lang="ts">
+  import { current_component } from "svelte/internal";
+  import { forwardEventsBuilder } from "../utils/eventforwarder";
   export let variant: "primary" | "secondary" | "cta" | "conversion";
   export let disabled: boolean = false;
+
+  const forwardEvents = forwardEventsBuilder(current_component);
 </script>
 
 <style lang="postcss">
@@ -26,7 +30,7 @@
 </style>
 
 <button
-  on:click
+  use:forwardEvents
   {disabled}
   class:disabled
   class="transition-all duration-[50ms] inline-block text-center py-[0.5rem] px-[1.5rem] shadow-light font-semibold bg-none rounded-xl text-btn-small  text-black leading-4 {variant}"
