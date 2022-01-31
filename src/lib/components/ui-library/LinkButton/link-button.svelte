@@ -29,7 +29,7 @@
   }
 
   .medium {
-    @apply py-2 px-6 text-btn-small;
+    @apply py-2 px-6 text-btn-small leading-4 rounded-xl;
   }
 
   .large {
@@ -37,7 +37,7 @@
   }
 
   .small {
-    @apply py-1 px-4 text-p-xsmall;
+    @apply py-1 px-4 text-p-xsmall rounded-xl;
   }
 </style>
 
@@ -46,7 +46,7 @@
   {disabled}
   class:disabled
   class:primary={variant === "primary"}
-  class="transition-all duration-[50ms] inline-block text-center  shadow-light font-semibold bg-none rounded-xl  text-black leading-4 {className} {size}"
+  class="transition-all duration-[50ms] inline-block text-center shadow-light font-semibold bg-none text-black {className} {size}"
   {...$$restProps}
 >
   <slot />
