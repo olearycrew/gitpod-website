@@ -29,15 +29,15 @@
   }
 
   img {
-    transform: translateX(25%) translateY(-40%);
-    width: 40vw;
+    transform: translateY(-40%);
+    width: 35vw;
   }
 </style>
 
 <Section class="hero relative text-center lg:text-left pb-x-large lg:pb-0">
   <div class="text-box lg:pt-x-large mx-auto lg:mx-0">
     <h1 class="h1">{title}</h1>
-    <p class="mx-auto lg:mx-0 text-large mb-x-small">
+    <p class="mx-auto lg:mx-0 max-w-lg lgx:max-w-none text-large mb-x-small">
       {text}
     </p>
     <div class="buttons-wrapper justify-center lg:justify-start">

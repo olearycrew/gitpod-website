@@ -60,7 +60,7 @@ text: "of engineers develop w/ Gitpod",
 		author={{
 			name: "François Rutiy",
 			jobTitle: "CTO",
-			company: "@Shares.io"
+			company: "Shares.io"
 		}}
 	/>
 </Section>

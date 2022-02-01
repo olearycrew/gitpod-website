@@ -17,7 +17,7 @@
 
 <style lang="postcss">
   .text > div {
-    @apply w-36;
+    width: 136px;
   }
 
   .h5 {
@@ -33,7 +33,7 @@
     style="background-image: url({image})"
   />
   <div
-    class="text grid grid-cols-2 gap-x-medium gap-xx-small sm:gap-y-small p-xx-small sm:p-x-small"
+    class="text grid grid-cols-2 gap-y-xx-small gap-x-micro sm:gap-y-small p-xx-small sm:p-x-small"
   >
     <div>
       <p class="h5">Industry</p>

@@ -50,7 +50,9 @@
         <img
           src={quote.companyLogo.src}
           alt={quote.companyLogo.alt}
-          class="h-7 w-20 sm:h-9 sm:w-28 transition opacity-60 group-hover:opacity-100 group-focus:opacity-100"
+          class="h-7 w-20 sm:h-9 sm:w-28 transition group-hover:opacity-100 group-focus:opacity-100 group-focus:filter-none group-hover:filter-none"
+          class:opacity-60={selectedQuote !== quote}
+          class:grayscale={selectedQuote !== quote}
         />
       </button>
     {/each}
@@ -71,7 +73,7 @@
       </p>
 
       <p class="font-bold mt-xx-small">
-        {selectedQuote.author}, {selectedQuote.jobTitle}
+        {selectedQuote.author}, {selectedQuote.jobTitle} @{selectedQuote.company}
       </p>
     </div>
   </div>

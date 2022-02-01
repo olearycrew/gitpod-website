@@ -8,6 +8,14 @@
   :global(nav.toc) {
     @apply hidden;
   }
+
+  :global(blockquote) {
+    @apply bg-transparent border-l-4 border-orange-900 pl-xx-small py-0 sm:m-small rounded-none !important;
+  }
+
+  :global(blockquote) :global(p) {
+    @apply text-h6 text-black font-semibold !important;
+  }
 </style>
 
 <Section>
@@ -18,7 +26,7 @@
 
   <div class="prose max-w-3xl mx-auto mt-x-large">
     <div
-      class="h-36 bg-cover rounded-t-2xl mb-small"
+      class="h-36 bg-cover bg-center rounded-t-2xl mb-small"
       style="background-image: url({bannerImg});"
     />
     <slot />
