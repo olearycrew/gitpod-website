@@ -1,6 +1,6 @@
 <script lang="ts">
   import Header from "../header.svelte";
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
 
   export let title: string;
 </script>

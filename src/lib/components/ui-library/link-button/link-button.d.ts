@@ -6,4 +6,6 @@ export declare class LinkButtonType extends Component {
     "size"
   > &
     Component["$$prop_def"];
+
+  $$events_def: { click: MouseEvent; mouseover: MouseEvent };
 }

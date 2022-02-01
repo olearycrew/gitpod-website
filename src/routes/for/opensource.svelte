@@ -21,7 +21,7 @@
   import CardSmall from "$lib/components/card/card-small.svelte";
   import Header from "$lib/components/header.svelte";
   import Quotes from "$lib/components/quotes.svelte";
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
   import { quotes } from "$lib/contents/opensource";
 </script>
 

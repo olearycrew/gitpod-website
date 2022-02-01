@@ -14,14 +14,8 @@ title: Gitpod is now Open Source 🎉
 </script>
 
 <script>
-    import LinkButton from "$lib/components/ui-library/LinkButton"
+    import LinkButton from "$lib/components/ui-library/link-button/link-button.svelte"
 </script>
-
-<style>
-    [class*="btn"] {
-        @apply mt-xx-small;
-    }
-</style>
 
 As of today Gitpod is open source under the AGPL license at [github.com/gitpod-io/gitpod](https://github.com/gitpod-io/gitpod). This allows the community to participate in the development of Gitpod, provides more transparency and makes it even easier for developers to use and integrate Gitpod in their workflows.
 

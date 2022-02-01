@@ -1,5 +1,5 @@
 <script lang="ts">
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
 </script>
 
 <div

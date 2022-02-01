@@ -18,7 +18,7 @@
   import FeatureBox from "$lib/components/feature-box.svelte";
   import Header from "$lib/components/header.svelte";
   import Quote from "$lib/components/startups/quote.svelte";
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
 </script>
 
 <style lang="postcss">

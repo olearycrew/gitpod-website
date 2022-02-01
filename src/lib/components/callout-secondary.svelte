@@ -1,6 +1,6 @@
 <script lang="ts">
   import Section from "./section.svelte";
-  import LinkButton from "./ui-library/LinkButton";
+  import LinkButton from "./ui-library/link-button";
   export let title: string;
   export let text: string;
   export let link: { href: string; text: string } = {

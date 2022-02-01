@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
 
   let githubStarsEl: HTMLAnchorElement;
 

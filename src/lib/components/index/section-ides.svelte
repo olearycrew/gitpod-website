@@ -3,7 +3,7 @@
   import Section from "../section.svelte";
   import Toggle from "../toggle.svelte";
   import IdeSwitcher from "./ide-switcher.svelte";
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
   let selectedIde = "vscode";
   let ideType = "browser";
   let toggleChecked = false;

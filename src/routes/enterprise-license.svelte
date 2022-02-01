@@ -6,7 +6,7 @@
   import { goto } from "$app/navigation";
   import type { Form } from "$lib/types/form.type";
   import OpenGraph from "$lib/components/open-graph.svelte";
-  import Button from "$lib/components/ui-library/Button";
+  import Button from "$lib/components/ui-library/button";
 
   import { countryList } from "$lib/contents/license-key";
   import type { Email } from "../functions/submit-form";

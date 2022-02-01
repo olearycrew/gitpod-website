@@ -1,6 +1,6 @@
 <script lang="ts">
   import Section from "./section.svelte";
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
 
   export let text: string;
   export let list: string[];

@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { ContactCard } from "$lib/types/contact-card.type";
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
 
   export let contactCard: ContactCard;
 </script>

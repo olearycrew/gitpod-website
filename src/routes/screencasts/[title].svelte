@@ -21,7 +21,7 @@
   import Explore from "$lib/components/explore.svelte";
   import SectionCommon from "$lib/components/section-common.svelte";
   import ScreencastsGrid from "$lib/components/screencasts/screencasts-grid.svelte";
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
   import { beforeUpdate, onMount } from "svelte";
   import { afterNavigate } from "$app/navigation";
   import Header from "$lib/components/header.svelte";

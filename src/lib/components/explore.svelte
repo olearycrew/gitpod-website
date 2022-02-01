@@ -1,6 +1,6 @@
 <script lang="ts">
   import Section from "./section.svelte";
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
   import type { ExploreSection } from "$lib/types/explore-section.type";
 
   export let contents: ExploreSection = {};

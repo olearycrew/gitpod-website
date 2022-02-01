@@ -11,7 +11,7 @@
   import Explore from "$lib/components/explore.svelte";
   import { exploreContents } from "$lib/contents/community/hereos";
   import Header from "$lib/components/header.svelte";
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
 </script>
 
 <OpenGraph

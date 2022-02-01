@@ -9,7 +9,7 @@
   import Find from "$lib/components/startups/find.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import Header from "$lib/components/header.svelte";
-  import LinkButton from "$lib/components/ui-library/LinkButton";
+  import LinkButton from "$lib/components/ui-library/link-button";
 </script>
 
 <OpenGraph

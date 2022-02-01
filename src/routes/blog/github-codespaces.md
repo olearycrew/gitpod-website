@@ -13,7 +13,7 @@ title: GitHub Codespaces, Welcome to the Party!
 </script>
 
 <script>
-  import LinkButton from "$lib/components/ui-library/LinkButton"
+  import LinkButton from "$lib/components/ui-library/link-button/link-button.svelte"
 </script>
 
 Today, GitHub announced the private beta of [GitHub Codespaces](https://github.com/features/codespaces), which provide container-based dev environments for GitHub projects. At Gitpod, we are building a similar solution, and while GitHub’s Codespaces don’t fully implement everything we do, they truly embrace the notion of dev environments as code.
