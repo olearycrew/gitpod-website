@@ -45,6 +45,10 @@
     @apply px-large;
     flex: 0 0 45%;
 
+    @media (max-width: 1280px) {
+      @apply pr-0 md:pl-small lg:pl-large;
+    }
+
     @media (max-width: 830px) {
       @apply pt-xx-small px-xx-small;
     }
@@ -127,7 +131,7 @@
       </div>
     </div>
     <div
-      class="explore__illustration w-full bg-cover bg-center"
+      class="explore__illustration w-full bg-cover bg-left"
       style="background-image: url(/images/{useKumquatIllustration
         ? 'kumquat.png'
         : 'illustration-grid.png'});"
