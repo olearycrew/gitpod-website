@@ -13,8 +13,6 @@
   import PostPreview from "$lib/components/blog/post-preview.svelte";
   import Section from "$lib/components/section.svelte";
 
-  import LinkButton from "$lib/components/ui-library/link-button";
-
   export let posts: BlogPost[];
 </script>
 
