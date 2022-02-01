@@ -511,7 +511,8 @@
         text: "Try Now",
       },
     }}
-    btnClassNames="btn-primary mt-x-small"
+    variant="primary"
+    btnClassNames="mt-x-small"
     class="mx-micro mb-micro"
     headingLevel="h2"
   />

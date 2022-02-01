@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Details } from "$lib/types/details.type";
+  import LinkButton from "$lib/components/ui-library/link-button";
   export let details: Details;
   export let link: { href: string; text: string } = null;
   export let isHighlighted: boolean = false;
@@ -24,14 +25,6 @@
     }
     dd {
       @apply text-base mb-medium;
-    }
-  }
-
-  .btn-cta {
-    @apply inline-block whitespace-nowrap;
-
-    @media (max-width: 1059px) {
-      @apply mb-small;
     }
   }
 </style>
@@ -64,10 +57,11 @@
 
 {#if link}
   <div class="relative h-10 w-full">
-    <a
+    <LinkButton
+      variant={isHighlighted ? "primary" : "cta"}
+      size="medium"
       href={link.href}
-      class="btn-cta absolute left-1/2 -translate-x-1/2"
-      class:btn-primary={isHighlighted}>{link.text}</a
+      class="absolute left-1/2 -translate-x-1/2">{link.text}</LinkButton
     >
   </div>
 {/if}

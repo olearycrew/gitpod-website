@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Pricing } from "$lib/types/pricing.type";
   import QaTooltip from "../qa-tooltip.svelte";
+  import LinkButton from "$lib/components/ui-library/link-button";
 
   export let pricing: Pricing;
   const {
@@ -99,11 +100,12 @@
     {/if}
   </div>
   {#if btnHref && btnText}
-    <a
+    <LinkButton
+      variant={spiced ? "primary" : "cta"}
+      size="medium"
       href={btnHref}
       data-analytics={`{"context":"` + trackingName + `","position":"hero"}`}
-      class="btn-cta"
-      class:btn-primary={spiced}>{btnText}</a
+      >{btnText}</LinkButton
     >
   {/if}
   {#if footnote}

@@ -55,7 +55,7 @@
     textAlign="left"
   >
     <div slot="content" class="buttons-wrapper pt-x-small">
-      <TwitterFollowButton class="btn-primary" />
+      <TwitterFollowButton variant="primary" />
       <a
         href="https://gitpod.io/notifications"
         target="_blank"

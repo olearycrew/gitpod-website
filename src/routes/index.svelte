@@ -21,7 +21,6 @@
   import SpinUp from "$lib/components/index/spin-up.svelte";
   import Section from "$lib/components/section.svelte";
   import Resources from "$lib/components/resources.svelte";
-  import LinkButton from "$lib/components/ui-library/link-button";
 </script>
 
 <OpenGraph
@@ -49,4 +48,3 @@
 <Testimonials {testimonials} />
 <GetStarted />
 <SpinUp />
-<LinkButton onCli />
