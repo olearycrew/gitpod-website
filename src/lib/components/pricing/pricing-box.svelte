@@ -102,7 +102,7 @@
   {#if btnHref && btnText}
     <LinkButton
       variant={spiced ? "primary" : "cta"}
-      size="medium"
+      size="large"
       href={btnHref}
       data-analytics={`{"context":"` + trackingName + `","position":"hero"}`}
       >{btnText}</LinkButton
