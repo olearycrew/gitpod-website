@@ -5,7 +5,7 @@
 
   let className: string = "";
   export { className as class };
-  export let variant: "primary" | "secondary" | "cta" | "tertiary";
+  export let variant: "primary" | "secondary" | "cta" | "tertiary" | "unstyled";
   export let size: "small" | "medium" | "large" = "medium";
   export let disabled: boolean = false;
   export let href: string;
@@ -52,7 +52,10 @@
   {href}
   {disabled}
   class:disabled
-  class="transition-all duration-[50ms] inline-block text-center shadow-light font-semibold bg-none text-black {variant} {className} {size}"
+  class="transition-all duration-[50ms] inline-block text-center shadow-light font-semibold bg-none text-black {variant ===
+  'unstyled'
+    ? ''
+    : variant} {size} {className}"
   {...$$restProps}
 >
   <slot />
