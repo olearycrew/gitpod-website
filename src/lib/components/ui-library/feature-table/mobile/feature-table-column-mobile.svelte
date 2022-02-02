@@ -3,7 +3,6 @@
   import LinkButton from "$lib/components/ui-library/link-button";
   import FeatureTableHeaderMobile from "./feature-table-header-mobile.svelte";
   import type { FeatureTableColumn } from "../feature-table.types";
-  import Link from "../../../footer/link.svelte";
 
   export let featureData: FeatureTableColumn;
 
