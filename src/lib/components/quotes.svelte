@@ -10,7 +10,7 @@
   }
 
   .quote {
-    height: 330px;
+    height: 400px;
 
     @media (max-width: 1040px) {
       height: 300px;

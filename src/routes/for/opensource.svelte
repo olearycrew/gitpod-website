@@ -27,7 +27,7 @@
 <OpenGraph
   data={{
     description:
-      "Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. Get a free Open-Source Plan.",
+      "Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. Upgrade your account to our complementary plan for the people who maintain the infrastructure that the world depends upon.",
     title: "Gitpod for Open Source",
     norobots: true,
   }}
@@ -35,8 +35,7 @@
 
 <Header
   title="Gitpod for Open Source"
-  text="Spend less time reviewing pull-requests, on-boarding contributors and more
-  time on building great things. <strong>Get a free Open-Source Plan.</strong>"
+  text="Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. <strong>Upgrade your account to our complementary plan for the people who maintain the infrastructure that the world depends upon.</strong>"
   textClassNames="text-large max-w-4xl mx-auto"
   fullWidth={true}
 >
@@ -58,7 +57,7 @@
 <ProgramBenefits cards={programBenefits} />
 
 <Eligibility
-  text="To qualify for Gitpod’s startup program, need to meet one of these criteria:"
+  text="To qualify for Gitpod’s Opensource program, need to meet one of these criteria:"
   list={[
     "You are a maintainer, core contributor to a well-established open-source project.",
     "You regularly contribute to open source communities in other ways (e.g. producing regular content like blog posts, videos, live streams, translations, or organizing meet-ups, conferences, hackathons, etc).",
