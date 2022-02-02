@@ -2,6 +2,7 @@
   import type { Ide } from "$lib/types/ide.type";
   import { createEventDispatcher } from "svelte";
   export let ides: Ide[];
+  export let activeByDefaultName: string;
 
   const dispatch = createEventDispatcher();
 
@@ -13,15 +14,11 @@
     const [iconDiv, soonSpan]: HTMLElement[] = Array.from(
       (e.target as HTMLElement).children
     );
-    // the following if block is temporary and it should be removed when screenshots for the other ides are added.
-    if (!hasNoScreenshots(name)) {
-      return;
-    }
-    if (hasNoScreenshots(name)) {
-      iconDiv.classList.remove("grayed");
+
+    iconDiv.classList.remove("grayed");
+
+    if (soonSpan) {
       soonSpan.style.display = "flex";
-    } else {
-      iconDiv.classList.add("grayed");
     }
 
     if (!hasNoScreenshots(name)) {
@@ -31,16 +28,16 @@
     }
   };
 
-  const handleMouseLeave = (e: MouseEvent, name: string) => {
+  const handleMouseLeave = (e: MouseEvent) => {
     // @ts-ignore
     const [iconDiv, soonSpan]: HTMLElement[] = Array.from(
       (e.target as HTMLElement).children
     );
-    if (hasNoScreenshots(name)) {
+    if (iconDiv.dataset.name !== activeByDefaultName) {
       iconDiv.classList.add("grayed");
+    }
+    if (soonSpan) {
       soonSpan.style.display = "none";
-    } else {
-      iconDiv.classList.remove("grayed");
     }
   };
 </script>
@@ -90,19 +87,20 @@
 <div
   class="mt-macro md:mt-0 md:absolute md:top-0 md:-right-1 lgx:-right-2 flex space-x-1 sm:space-x-2 md:space-x-0 justify-center md:w-min md:block space-y-0 md:space-y-2"
 >
-  {#each ides as { name, availibility, label, icon, screenshots }}
+  {#each ides as { name, availibility, label, icon }}
     <button
       class="block relative cursor-pointer"
       on:mouseenter={(e) => {
         handleMouseEnter(e, name);
       }}
       on:mouseleave={(e) => {
-        handleMouseLeave(e, name);
+        handleMouseLeave(e);
       }}
     >
       <div
-        class="relative icon-box flex items-center justify-center bg-off-white rounded-lg md:rounded-xl lgx:rounded-2xl shadow-lg transition duration-200 linear"
-        class:grayed={!screenshots}
+        class="icon-box relative flex items-center justify-center bg-off-white rounded-lg md:rounded-xl lgx:rounded-2xl shadow-lg transition duration-200 linear"
+        class:grayed={!(activeByDefaultName === name)}
+        data-name={name}
       >
         <img src="/svg/index/{icon}" alt={label} class="icon" />
       </div>

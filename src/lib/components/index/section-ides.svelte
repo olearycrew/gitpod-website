@@ -50,7 +50,11 @@
             class="shadow-brand rounded-lg"
           />
         </div>
-        <IdeSwitcher on:message={handleIdeChange} {ides} />
+        <IdeSwitcher
+          on:message={handleIdeChange}
+          {ides}
+          activeByDefaultName="vscode"
+        />
       </div>
     </div>
     <div class="text-center m-auto">

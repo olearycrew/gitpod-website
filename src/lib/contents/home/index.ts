@@ -461,28 +461,40 @@ export const ides: Ide[] = [
     icon: "vscode.svg",
   },
   {
-    name: "intellij",
-    availibility: "beta",
-    label: "IntelliJ IDEA",
-    icon: "intellij.svg",
-  },
-  {
     name: "goland",
     availibility: "beta",
     label: "Goland",
+    screenshots: {
+      desktop: "goland.png",
+    },
     icon: "goland.svg",
+  },
+  {
+    name: "intellij",
+    availibility: "beta",
+    label: "IntelliJ IDEA",
+    screenshots: {
+      desktop: "intellij.png",
+    },
+    icon: "intellij.svg",
   },
   {
     name: "pycharm",
     availibility: "beta",
     label: "PyCharm",
+    screenshots: {
+      desktop: "pycharm.png",
+    },
     icon: "pycharm.svg",
   },
   {
-    name: "webstorm",
-    availibility: "soon",
-    label: "GoLand",
-    icon: "webstorm.svg",
+    name: "phpstorm",
+    availibility: "beta",
+    label: "PhpStorm",
+    screenshots: {
+      desktop: "phpstorm.png",
+    },
+    icon: "phpstorm.svg",
   },
   {
     name: "rubymine",
@@ -491,9 +503,9 @@ export const ides: Ide[] = [
     icon: "rubymine.svg",
   },
   {
-    name: "phpstorm",
-    availibility: "beta",
-    label: "PhpStorm",
-    icon: "phpstorm.svg",
+    name: "webstorm",
+    availibility: "soon",
+    label: "GoLand",
+    icon: "webstorm.svg",
   },
 ];
