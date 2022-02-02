@@ -19,7 +19,9 @@
         size="medium"
         href="https://www.gitpodstatus.com/">View status page</LinkButton
       >
-      <a href="/contact/support" class="btn-secondary">Contact support</a>
+      <LinkButton variant="secondary" size="medium" href="/contact/support"
+        >Contact support</LinkButton
+      >
     </div>
   </div>
 </Section>

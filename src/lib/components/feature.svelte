@@ -1,5 +1,6 @@
 <script lang="ts">
   import { isAnExternalLink } from "$lib/utils/helpers";
+  import LinkButton from "$lib/components/ui-library/link-button";
 
   import type { Feature } from "$lib/types/feature.type";
   import Console from "./console.svelte";
@@ -89,12 +90,13 @@
           </a>
         {/if}
         {#if secondaryButton}
-          <a
+          <LinkButton
+            variant="secondary"
+            size="medium"
             href={secondaryButton.href}
-            class="btn-secondary"
             target={isAnExternalLink(secondaryButton.href)
               ? "_blank"
-              : undefined}>{secondaryButton.text}</a
+              : undefined}>{secondaryButton.text}</LinkButton
           >
         {/if}
       </div>
