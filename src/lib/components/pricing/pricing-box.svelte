@@ -43,10 +43,6 @@
     }
   }
 
-  .btn-cta {
-    @apply self-center;
-  }
-
   .learn-more {
     @apply underline;
   }
