@@ -25,17 +25,6 @@ a {
   }
 }
 
-.btn-tertiary {
-  background-color: var(--black);
-  color: var(--white);
-
-  &:hover,
-  &:focus {
-    color: var(--white);
-    background-color: var(--black-hover);
-  }
-}
-
 /* Unique buttons */
 .btn-green {
   background-color: var(--transparent-green);

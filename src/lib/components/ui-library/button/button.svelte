@@ -4,7 +4,7 @@
   let className: string = "";
   export { className as class };
   export let size: "small" | "medium" | "large" = "medium";
-  export let variant: "primary" | "secondary" | "cta" | "conversion";
+  export let variant: "primary" | "secondary" | "cta" | "tertiary";
   export let disabled: boolean = false;
 
   const forwardEvents = forwardEventsBuilder(current_component);
@@ -21,6 +21,10 @@
 
   .cta {
     @apply bg-sand-dark hover:bg-orange-900 focus:bg-orange-900;
+  }
+
+  .tertiary {
+    @apply bg-black text-white hover:bg-black-hover;
   }
 
   .disabled {

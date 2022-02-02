@@ -5,7 +5,7 @@
 
   let className: string = "";
   export { className as class };
-  export let variant: "primary" | "secondary" | "cta";
+  export let variant: "primary" | "secondary" | "cta" | "tertiary";
   export let size: "small" | "medium" | "large" = "medium";
   export let disabled: boolean = false;
   export let href: string;
@@ -24,6 +24,10 @@
 
   .cta {
     @apply bg-sand-dark hover:bg-orange-900 focus:bg-orange-900;
+  }
+
+  .tertiary {
+    @apply bg-black text-white hover:bg-black-hover;
   }
 
   .disabled {

@@ -59,6 +59,14 @@
   }
 
   .btn-tertiary {
+    background-color: var(--black);
+    color: var(--white);
+
+    &:hover,
+    &:focus {
+      color: var(--white);
+      background-color: var(--black-hover);
+    }
     border-radius: 0.75rem;
     max-width: 9rem;
     padding: 0.5rem 0.75rem;
