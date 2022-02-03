@@ -48,7 +48,7 @@
       <img
         src={selectedQuote.img.src}
         alt={selectedQuote.img.alt}
-        class="w-64 sm:max-w-xs sm:rounded-3xl lg:max-w-sm xl:max-w-md lg:w-full mx-auto"
+        class="w-64 sm:max-w-xs rounded-3xl lg:max-w-sm xl:max-w-md lg:w-full mx-auto"
       />
     </div>
     <div
