@@ -20,7 +20,7 @@
   }
 
   .cta {
-    @apply bg-sand-dark hover:bg-orange-900 focus:bg-orange-900;
+    @apply bg-sand-dark hover:bg-orange-700 focus:bg-orange-700;
   }
 
   .tertiary {
