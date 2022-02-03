@@ -21,20 +21,6 @@
       height: auto;
     }
   }
-
-  .quote .text {
-    @media (max-width: 890px) {
-      height: 230px;
-    }
-
-    @media (max-width: 630px) {
-      height: 270px;
-    }
-
-    @media (max-width: 430px) {
-      height: 310px;
-    }
-  }
 </style>
 
 <div
@@ -55,16 +41,18 @@
       </button>
     {/each}
   </div>
-  <div class="flex mt-xx-small lg:mt-small text-left quote">
+  <div
+    class="flex items-center px-xx-small mt-xx-small lg:mt-small text-left quote"
+  >
     <div>
       <img
         src={selectedQuote.img.src}
         alt={selectedQuote.img.alt}
-        class="sm:max-w-xs sm:rounded-3xl lg:max-w-sm xl:max-w-md w-full mx-auto"
+        class="w-64 sm:max-w-xs sm:rounded-3xl lg:max-w-sm xl:max-w-md lg:w-full mx-auto"
       />
     </div>
     <div
-      class="text flex-1 max-w-lg pt-micro px-xx-small sm:pl-x-small lg:pl-small lg:pr-0 mx-auto"
+      class="text flex-1 max-w-lg py-xx-small px-xx-small sm:pl-x-small lg:pl-small lg:pr-0 mx-auto"
     >
       <p class="text-large">
         &ldquo;{selectedQuote.text}&rdquo;
