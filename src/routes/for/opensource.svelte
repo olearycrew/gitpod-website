@@ -65,7 +65,7 @@
     "A significant part of your income is from maintaining or producing open source work.",
   ]}
   link={{ href: "", text: "Apply now" }}
-  ulMaxWidth="720px"
+  ulMaxWidth="638px"
 />
 
 <Faqs />
