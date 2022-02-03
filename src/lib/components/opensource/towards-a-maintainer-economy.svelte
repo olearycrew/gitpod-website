@@ -28,7 +28,7 @@
 </script>
 
 <MoreArticles
-  title="Actions speak louder than words"
-  text="It wouldn’t have been possible to create Gitpod without all the amazing open-source work it’s built upon. The industry needs to secure their software supply chain and one of the first steps along the way is acknowledging and supporting the maintainers."
+  title="Towards a maintainer economy"
+  text="Gitpod supports the high achievers that our digital society is built upon."
   {posts}
 />

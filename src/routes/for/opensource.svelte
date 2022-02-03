@@ -17,7 +17,7 @@
   import OpenGraph from "$lib/components/open-graph.svelte";
   import SectionCommon from "$lib/components/section-common.svelte";
   import Explore from "$lib/components/explore.svelte";
-  import ActionsSpeakLouderThanWords from "$lib/components/opensource/actions-speak-louder-than-words.svelte";
+  import ActionsSpeakLouderThanWords from "$lib/components/opensource/towards-a-maintainer-economy.svelte";
   import CardSmall from "$lib/components/card/card-small.svelte";
   import Header from "$lib/components/header.svelte";
   import Quotes from "$lib/components/quotes.svelte";
