@@ -27,7 +27,7 @@
 <OpenGraph
   data={{
     description:
-      "Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. Upgrade your account to our complementary plan for the people who maintain the infrastructure that the world depends upon.",
+      "Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. Upgrade your account to our complementary plan.",
     title: "Gitpod for Open Source",
     norobots: true,
   }}
@@ -35,7 +35,7 @@
 
 <Header
   title="Gitpod for Open Source"
-  text="Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. <strong>Upgrade your account to our complementary plan for the people who maintain the infrastructure that the world depends upon.</strong>"
+  text="Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. <strong>Upgrade your account to our complementary plan.</strong>"
   textClassNames="text-large max-w-4xl mx-auto"
   fullWidth={true}
 >

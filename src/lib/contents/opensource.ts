@@ -198,7 +198,7 @@ export const exploreContents: ExploreSection = {
   title: "Apply Now",
   description:
     "Spend less time reviewing pull-requests, onboarding contributors and more time on building great things.",
-  note: "Upgrade your account to our complementary plan for the people who maintain the infrastructure that the world depends upon.",
+  note: "Upgrade your account to our complementary plan.",
   link: {
     text: "Apply Now",
     href: "https://docs.google.com/forms/d/e/1FAIpQLScL5vaxUrbermCKvyUrJ6eg4gQU18ORxg4wwbA5WuYxxWgEuQ/viewform",
