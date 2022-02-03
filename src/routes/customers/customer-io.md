@@ -1,8 +1,9 @@
 ---
-title: Remote & Collaboration
-excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+title: Improving collaboration between QAs, engineers and designers
+excerpt: In a bake-off, customer.io chose Gitpod over Codespaces due to ephemeral developer environments, multi IDE support and prebuilds.
 slug: customer-io
 image: teaser.png
+date: Thursday, 3 Feburary 2022 03:00:00 UTC
 ---
 
 <script lang="ts" context="module">

@@ -1,8 +1,9 @@
 ---
-title: Vizlib
-excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+title: From internal hackathon to 20% fewer hotfixes
+excerpt: Vizlib started using Gitpod for an internal hackathon and eventually moved their whole development to the cloud. This reduced the onboarding time for new hires from two days to one hour and resulted in 20% fewer hotfixes after release.
 slug: vizlib
 image: teaser.png
+date: Thursday, 3 Feburary 2022 02:00:00 UTC
 ---
 
 <script lang="ts" context="module">

@@ -1,8 +1,9 @@
 ---
-title: Shares.io
-excerpt: Scaling from 3 to 45 engineers in 5 months on the back of Gitpod
+title: Scaling from 3 to 45 engineers in 5 months
+excerpt: Gitpod helped engineers at Shares.io become more productive and focused. It cut the onboarding process for new hires down to 10 minutes. Gitpod also removed any friction in dev environment management and  day to day collaboration, saving every engineer half a day per week.
 slug: shares-io
 image: teaser.png
+date: Thursday, 3 Feburary 2022 04:00:00 UTC
 ---
 
 <script lang="ts" context="module">
@@ -65,7 +66,7 @@ text: "of engineers develop w/ Gitpod",
 	/>
 </Section>
 
-<Story bannerImg="/images/customers/customer-io/banner.png" text="Scaling from 3 to 45 engineers in 5 months on the back of Gitpod">
+<Story bannerImg="/images/customers/shares-io/banner.png" text="Scaling from 3 to 45 enginees in 5 months on the back of Gitpod">
 
 Shares App is a community powered investment platform where investors come to make trades, discuss opportunities with friends, discover new communities and get digestible investing insights while building long-term financial health – together.
 

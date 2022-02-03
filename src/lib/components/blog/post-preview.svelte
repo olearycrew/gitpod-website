@@ -4,32 +4,46 @@
 
   import type { BlogPost } from "$lib/types/blog-post.type";
   import Avatars from "../avatars.svelte";
+  import Pill from "../pill.svelte";
 
   export let post: BlogPost;
   export let isMostRecent: boolean = false;
   export let type: "blog" | "guides" | "customers";
   export let layout: "row" | "column" = "column";
+  export let teaserHeightClass: string = "h-64";
+  export let availability: boolean = true;
 
   export let headlineOrder: "h3" | "" = "";
 
   const href = post && post.href ? post.href : `/${type}/${post.slug}`;
   const target =
     post && post.href && isAnExternalLink(post.href) ? "_blank" : undefined;
+
+  let clazz = "";
+
+  export { clazz as class };
 </script>
 
 <div
   class:bg-sand-dark={!isMostRecent}
   class="flex flex-col max-w-sm lg:max-w-none {layout === 'column'
     ? ''
-    : 'lg:flex-row lg:max-w-6xl mx-auto'} rounded-xl bg-off-white transition-all duration-200 hover:shadow-normal focus:shadow-normal"
+    : 'lg:flex-row lg:max-w-6xl mx-auto'} rounded-xl bg-off-white transition-all duration-200 {availability &&
+    'hover:shadow-normal focus:shadow-normal'}"
   data-analytics={`{"context":"grid","variant":"preview"}`}
 >
   {#if isMostRecent}
-    <a {href} {target} sveltekit:prefetch>
+    <a
+      {href}
+      {target}
+      sveltekit:prefetch
+      class:pointer-events-none={!availability}
+      tabindex={!availability && -1}
+    >
       <div
         role="img"
         aria-label={`${type === "blog" ? "Blog post" : "Guide"}: ${post.title}`}
-        class="object-cover m-auto overflow-hidden rounded-t-xl bg-center bg-cover w-full h-64 {layout ===
+        class="object-cover m-auto overflow-hidden rounded-t-xl bg-center bg-cover w-full {teaserHeightClass} {layout ===
         'column'
           ? ''
           : 'lg:rounded-l-xl lg:rounded-t-none lg:w-60 lg:h-full'}"
@@ -47,29 +61,36 @@
       : 'flex-wrap'} flex lg:justify-between p-x-small pt-small"
   >
     <div>
-      {#if headlineOrder === "h3"}
-        <h3 class="text-h4">
-          <a
-            {href}
-            {target}
-            sveltekit:prefetch
-            class="no-underline text-black focus:underline hover:underline"
-          >
-            {post.title}
-          </a>
-        </h3>
-      {:else}
-        <h2 class="text-h4">
-          <a
-            {href}
-            {target}
-            sveltekit:prefetch
-            class="no-underline text-black focus:underline hover:underline"
-          >
-            {post.title}
-          </a>
-        </h2>
+      {#if !availability}
+        <Pill text="soon" />
       {/if}
+      <div class:mt-micro={!availability}>
+        {#if headlineOrder === "h3"}
+          <h3 class="text-h4">
+            <a
+              {href}
+              {target}
+              sveltekit:prefetch
+              class="no-underline text-black focus:underline hover:underline"
+              class:pointer-events-none={!availability}
+              tabindex={!availability && -1}
+            >
+              {post.title}
+            </a>
+          </h3>
+        {:else}
+          <h2 class="text-h4">
+            <a
+              {href}
+              {target}
+              sveltekit:prefetch
+              class="no-underline text-black focus:underline hover:underline"
+            >
+              {post.title}
+            </a>
+          </h2>
+        {/if}
+      </div>
       <p>{post.excerpt}</p>
     </div>
     <p class="mt-micro">

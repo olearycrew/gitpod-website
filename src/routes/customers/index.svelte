@@ -75,7 +75,8 @@
 >
   <div
     slot="content"
-    class="grid justify-center md:grid-cols-2 gap-xx-small max-w-3xl mx-auto mt-small"
+    class="grid justify-center md:grid-cols-2 gap-xx-small mx-auto mt-small"
+    style="max-width: 860px"
   >
     {#each customers as { title, excerpt, image, slug }}
       <PostPreview
@@ -89,6 +90,9 @@
         headlineOrder="h3"
         type="customers"
         isMostRecent={true}
+        class="max-w-sm"
+        teaserHeightClass="h-80"
+        availability={!(slug === "customer-io")}
       />
     {/each}
   </div>

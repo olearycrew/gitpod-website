@@ -1,8 +1,9 @@
 ---
-title: RedwoodJS
-excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+title: Building a community by removing friction to contribute
+excerpt: RedwoodJS is the latest open source project of Tom Preston-Werner, the Founder and former CEO of GitHub. Gitpod removed the friction of building on and contributing to Redwood, helping to build an engaging community.
 slug: redwoodjs
 image: teaser.png
+date: Thursday, 3 Feburary 2022 01:00:00 UTC
 ---
 
 <script lang="ts" context="module">
