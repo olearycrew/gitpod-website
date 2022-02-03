@@ -15,7 +15,7 @@ export const quotes: Quote[] = [
   {
     text: "Gitpod totally changed the development velocity for RedwoodJS—it removed any issues related to configurations of dev environments and made it incredibly easy to contribute. Reviewing pull requests is delightful because they are prebuilt and ready for review!",
     author: "Tom Preston-Werner",
-    jobTitle: "Co-founder of GitHub (and RedwoodJS)",
+    jobTitle: "Co-founder of GitHub",
     companyLogo: {
       src: "/svg/opensource/redwood.svg",
       alt: "RedwoodJS",
