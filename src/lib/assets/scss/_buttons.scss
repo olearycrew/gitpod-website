@@ -1,30 +1,6 @@
 /* --------------------------------------------- */
 /* --- Buttons & Links that look like buttons--- */
 /* --------------------------------------------- */
-a {
-  transition: all 0.2s 50ms;
-}
-[class|="btn"],
-.btn {
-  display: inline-block;
-  text-align: center;
-  font-weight: 600;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.75em;
-  box-shadow: var(--shadow-light);
-  font-size: var(--btn-small);
-  line-height: 16px;
-  color: var(--black);
-}
-.btn {
-  background-color: var(--sand-dark);
-  &:hover,
-  &:focus {
-    background-color: var(--brand-almost-ripe);
-    background-image: none;
-  }
-}
-
 /* Unique buttons */
 .btn-green {
   background-color: var(--transparent-green);
@@ -69,8 +45,4 @@ a {
   & > * {
     margin: var(--gap) 0 0 var(--gap);
   }
-}
-
-p:last-child [class|="btn"] {
-  margin-top: 1rem;
 }
