@@ -11,7 +11,7 @@
     {
       title: "Open-Source Funding during DevX Conf",
       excerpt:
-        "It's time to start giving back. Participants could vote for their favourite nominated open-source projects and we distributed USD $10,000 between these projects.",
+        "It's time to start giving back. Participants voted for their favourite nominated open-source projects and we distributed USD $10,000 between these projects.",
       image: "/images/opensource/devxconf.png",
       isNotAnActualPost: true,
       href: "https://devxconf.org/opensource",
