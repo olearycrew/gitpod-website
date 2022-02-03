@@ -151,7 +151,7 @@ To see all configuration options for the Gitpod app, please visit [the docs](/do
 
 ## Installing missing packages
 
-The default Docker image for all Gitpod workspaces ([gitpod/workspace-full](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile)) already comes with many common developer tools. But sometimes you may see an error like this one:
+The default Docker image for all Gitpod workspaces ([gitpod/workspace-full](https://github.com/gitpod-io/workspace-images/blob/master/legacy/full/Dockerfile)) already comes with many common developer tools. But sometimes you may see an error like this one:
 
 > `bash: tool: command not found`
 

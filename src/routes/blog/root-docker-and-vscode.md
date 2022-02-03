@@ -31,7 +31,7 @@ After investigating different options such as [gVisor](https://github.com/google
 
 ## Docker 🐳
 
-With the new privileges you can now also run and build Docker images to start containers within your workspace. Gitpod’s default image ([workspace-full](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile)) comes equipped with Docker now, so all you need to do is run `sudo docker-up` and wait until the service is listening. Now start another terminal and use the Docker CLI as usual. Here is a short screencast showing how to start a simple hello world example.
+With the new privileges you can now also run and build Docker images to start containers within your workspace. Gitpod’s default image ([workspace-full](https://github.com/gitpod-io/workspace-images/blob/master/legacy/full/Dockerfile)) comes equipped with Docker now, so all you need to do is run `sudo docker-up` and wait until the service is listening. Now start another terminal and use the Docker CLI as usual. Here is a short screencast showing how to start a simple hello world example.
 
 `youtube: tW9zBHH37Cc`
 
