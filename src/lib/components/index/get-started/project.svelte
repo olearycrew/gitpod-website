@@ -59,6 +59,7 @@
   }
 
   .btn-tertiary {
+    @apply inline-block text-btn-small font-semibold leading-4 text-center;
     background-color: var(--black);
     color: var(--white);
 
