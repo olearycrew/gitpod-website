@@ -31,6 +31,19 @@ export const quotes: Quote[] = [
     },
   },
   {
+    text: "Gitpod will become the default way of developing. Local development is just not an option anymore.",
+    author: "Konrad Mattheis",
+    jobTitle: "CTO at Vizlib",
+    companyLogo: {
+      src: "/images/customers/vizlib/logo.png",
+      alt: "Vizlib",
+    },
+    img: {
+      src: "/images/customers/shares-io/quote.png",
+      alt: "Vizlib",
+    },
+  },
+  {
     text: "Gitpod totally changed the development velocity for RedwoodJS—it removed any issues related to configurations of dev environments and made it incredibly easy to contribute. Reviewing pull requests is delightful because they are prebuilt and ready for review!",
     author: "Tom Preston-Werner",
     jobTitle:
@@ -45,7 +58,7 @@ export const quotes: Quote[] = [
     },
   },
   {
-    text: "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, aliqua nsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, aliqua nsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     author: "John Doe",
     jobTitle: "X at Y",
     companyLogo: {

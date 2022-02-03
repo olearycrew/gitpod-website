@@ -19,24 +19,24 @@ date: Thursday, 3 Feburary 2022 05:00:00 UTC
 </script>
 
 <CustomerHero
-title="Lorem ipsum dolor sit amet Lorem ipsum"
-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+title="An internal hackathon as catalyst to 20% fewer hotfixes with Gitpod"
+text="Vizlib used Gitpod to circumvent challenges with local development at an internal hackathon for their new cloud-native product, Astrato. They eventually moved their whole development to the cloud. This reduced the onboarding time for new hires from two days to one hour and resulted in 20% fewer hotfixes after release."
 logo={{
-		src: "/svg/customers/customer-io-mark.svg",
-		alt: "customer.io"
+		src: "/svg/customers/astrato.svg",
+		alt: "Astrato"
 	}}
 card={{
 		image: "/images/customers/customer-io/teaser.png",
 		details:{
-			industry: "Marketing",
-			plan: "Startup, SaaS",
+			industry: "Data Analytics",
+			plan: "Team Unlimited, SaaS",
 			people: {
 				title: "Engineers",
-				text: "45+"
+				text: "80+"
 			},
 			website: {
-				href: "https://customer.io",
-				text: "customer.io",
+				href: "https://astrato.io",
+				text: "astrato.io",
 			}
 		}
 	}}
@@ -45,70 +45,70 @@ card={{
 <CompanyBenefits
 benefits={[
 {
-title: "3x",
-text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+title: "1 hour",
+text: "Onboarding instead of 2 days",
 },
 {
 title: "20%",
-text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+text: "Fewer hotfixes after release",
 },
 {
-title: "+10k",
-text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+title: "100€",
+text: "Saved per dev/month",
 }]}
 />
 
 <Section>
 	<Quote 
-		quote="Using Gitpod will improve your feature velocity and drastically reduce your
-		cycle times from commit to deploy."
+		quote="Gitpod will become the default way of developing. Local development is just not an option anymore."
 		author={{
-			name: "Fabian Lange",
-			jobTitle: "Founder & VP Engineering",
-			company: "Instana"
+			name: "Konrad Mattheis",
+			jobTitle: "CTO",
+			company: "Vizlib"
 		}}
 	/>
 </Section>
 
-<Story bannerImg="/images/customers/customer-io/banner.png">
+<Story bannerImg="/images/customers/customer-io/banner.png" text="An internal hackathon as catalyst to move developer environments into the cloud">
 
-# DevX & Velocity
+Vizlib builds powerful value-added products for Qlik Sense. Customers go beyond native Qlik Sense to supercharge their analytics. They are growing quickly on the back of their five value-added products, used by 1.000+ enterprise customers, and are now expanding into cloud-native BI with their new product, Astrato.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+The engineering team under CTO Konrad Mattheis came to appreciate the benefits of Gitpod during a hackathon.
 
-The myriad of tools relied upon by developers every day is built and maintained almost exclusively by unpaid volunteers. The maintainers of open-source projects - our digital infrastructure - are in desperate need of support. Because code is less charismatic than a hit YouTube video or Kickstarter campaign, there is little public awareness and appreciation for this work.
+## Gitpod as an unexpected outcome from a Hackathon
 
-Open-source, by design, is not financially sustainable. Finding reliable, well-defined funding sources is exceptionally challenging. As projects grow in size, many maintainers burn-out, find themselves unable to satisfy increasing support/maintenance demands and, unfortunately, in my particular case, <a href="https://ghuntley.com/a-new-chapter">irrevocably harm their marriage</a>.
+Engineers want to focus on being creative and writing code. For hackathons, this is even more true. In the case of Vizlib, [a five-day hackathon](https://astrato.io/blog/astrato-hackathon-innovating-and-improving-our-features-for-you/) was held to focus the team on the rapid development of new features and improvements for their new product, Astrato– a modern fully managed Cloud BI solution.
 
-<a href="https://twitter.com/freakboy3742">Russell Keith-Magee</a> delivered this beautiful keynote at PyCon, which captures the essence better than I can put in writing because it is such a personal topic.
+Naturally, the last thing the team wanted was to waste time on dealing with configuration, setup tasks and making changes to their developer environment. But that was the exact challenge – since engineers from various areas with different dev stacks came together to collaborate towards the same goal and product. Making changes to running local developer environments was not an option to avoid breaking them for when they return to their regular work. Plus, compatibility issues with the Astrato workflow on Windows added another layer of complexity.
 
-`youtube: 0t85TyH-h04`
+> “We needed a fast way to make everyone ready to code in just one hour without touching the local environments.”
 
-Much has changed since Russells' keynote and the infrastructure to financially support open-source maintainers now exists thanks to the efforts of Open Collective and GitHub Sponsors.
+The CTO, Konrad Mattheis, explored cloud developer environments as an option to solve these challenges and started evaluating Gitpod.
 
-## Shape the future you want to live in
+Using remote development would firstly ensure that local developer environments remained untouched. And since Gitpod provisions powerful Linux containers under the hood, the OS compatibility wouldn’t be an issue either. Having a standardized configuration to provide everyone with the right set and versions of tools at the click of a button ensured consistency with no “but it works on my machine” surprises.
 
-The truth is free software isn't free. How much is a task going to cost in person hours? Hours have rates. Rates require payment. Yet, an entire community of developers provide their services outside of their day job to produce tools consumed by businesses.
+> “Gitpod checked all the boxes, so all 72 participants used it throughout the hackathon week.”
 
-Did you know there are less than 2100 people in the inner GitHub open-source maintainer community?
+Konrad Mattheis explained that the deep focus on development allowed for much higher productivity. Given the collaborative nature of hackathons, Gitpod’s features such as sharing running workspaces for pair programming or sharing snapshots of workspaces let the teams collaborate much closer and more efficiently. The hackathon was a huge success and resulted in 10 new features or improvements to Astrato, more than initially expected. Read more in their Astrato [blog post](https://astrato.io/blog/astrato-hackathon-innovating-and-improving-our-features-for-you/).
 
-![Maintainer Community](../../../static/images/blog/gitpod-open-source-sustainability-fund/maintainer-community.png)
+An unintended outcome of the hackathon was the improvement of the development workflow at Vizlib: inspired by the efficiency of remote development with Gitpod, the team decided to move their whole developer environments to the cloud altogether. CTO Konrad Mattheis noted that the hackathon acted as a catalyst, making it more obvious that the aforementioned challenges are not exclusive to hackathons but significantly impact the day-to-day work of their engineering organization. Vizlib develops on a dockerized Kubernetes Stack with only full-stack engineers that use a variety of machines with different operating systems. This led to inconsistent, error-prone dev environments due to configuration drift.
 
-**I often wonder what the future would look like if these high achievers that our digital society is built upon were empowered to become independent artists.** If just one of those people can help more people better understand a technology or improve the developer experience for an entire ecosystem what is the worth/value of that and why isn't our industry doing that yet?
+> “Nearly every week, a few developers complained that they couldn’t work because the system couldn’t be built due to changes they were unaware of.”
 
-The word volunteer, by definition, means those who have the ability and time to give freely.
+## A smoother development process with improved collaboration and onboarding
 
-Paying for resources that are being consumed broadens the list of people who can do open-source. Additionally, money enables open-source maintainers to buy services and outsource the activities that do not bring them joy.
+Vizlib operates in squads consisting of engineers, QA testers, product managers and designers. Konrad shares that one of the biggest advantages of moving to Gitpod are the efficiency gains they get from better collaboration within and across squads. The ability to work on multiple issues, bugs or PRs and spin up workspaces that are fully prebuilt by the time they are started, resulted in massive time savings. Vizlib estimates that every engineer saves a minimum of two hours per week, purely by not having to fix their developer environments anymore. Excluding efficiency gains through increased flow state and more efficient collaboration.
 
-![Money enables diversity](../../../static/images/blog/gitpod-open-source-sustainability-fund/teaser.jpg)
+It also made the development process more robust by having fewer differences across the developer and production environments and allowing for better testing. Gitpod improved the accessibility to QA engineers and designers, which lifted development velocity and quality.
 
-At Gitpod, we firmly believe that working for an open-source project should be a legitimate alternative to a career working for a for-profit corporation. Additionally, we'd like everyone to be able to maintain open-source projects, not just people with the right financial background or youth that enables the ability to volunteer.
+> “The ability for QAs to easily test a branch resulted in 20% fewer hotfixes after releases.”
 
-## Actions speak louder than words
+Having newly hired engineers use automated developer environments in the cloud significantly reduces friction, onboarding time and allows them to contribute from the get-go. In the past, it took two days for an engineer to set up their dev environment, while it now only takes around an hour to get started.
 
-Today we are announcing five things:
+To support the rapid business growth, Vizlib plans to hire five additional product squads with 10 FTE each during 2022 (see Vizlib’s [career page](https://careers.vizlib.com/) for current opportunities), where these efficiency gains will have a massive impact. On top of that, CAPEX expenditures can be reduced as there is no need for overpowered machines anymore. Even without that, Vizlib estimates the cost savings to be more than $100 per month per engineer.
 
-![Credit: XKCD](../../../static/images/blog/gitpod-open-source-sustainability-fund/xkcd.png)
-_Credit: [XKCD](https://xkcd.com/2347/)_
+> “Gitpod will become the default way of developing. Local development is just not an option anymore.”
+
+We’re thankful for the collaboration with Vizlib and the interview with Konrad Mattheis that led to this case study.
 
 </Story>

@@ -19,7 +19,7 @@
 </style>
 
 <Section>
-  <div class="text-center">
+  <div class="text-center max-w-3xl mx-auto">
     <h2 class="h2">Full customer story</h2>
     <p>{text}</p>
   </div>
