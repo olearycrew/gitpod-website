@@ -73,7 +73,7 @@
       </p>
 
       <p class="font-bold mt-xx-small">
-        {selectedQuote.author}, {selectedQuote.jobTitle} @{selectedQuote.company}
+        {selectedQuote.author}, {selectedQuote.jobTitle} at {selectedQuote.company}
       </p>
     </div>
   </div>
