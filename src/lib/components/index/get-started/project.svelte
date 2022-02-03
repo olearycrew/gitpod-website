@@ -59,7 +59,12 @@
   }
 
   .btn-tertiary {
-    @apply inline-block text-btn-small font-semibold leading-4 text-center;
+    display: inline-block;
+    font-size: var(--btn-small);
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+    display: inline-block;
     background-color: var(--black);
     color: var(--white);
 
