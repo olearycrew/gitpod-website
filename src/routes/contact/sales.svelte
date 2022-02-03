@@ -10,6 +10,7 @@
   import Section from "$lib/components/section.svelte";
   import { trackEvent, trackIdentity } from "$lib/components/segment.svelte";
   import Header from "$lib/components/header.svelte";
+  import Button from "$lib/components/ui-library/button";
 
   const selfHostingSubject = "Self-hosting";
   const subjects = [
@@ -351,10 +352,11 @@
             >
           </li>
           <li>
-            <button
+            <Button
+              variant="cta"
+              size="medium"
               type="submit"
-              class="btn"
-              disabled={isFormDirty && !isFormValid}>Send message</button
+              disabled={isFormDirty && !isFormValid}>Send message</Button
             >
           </li>
         </ul>

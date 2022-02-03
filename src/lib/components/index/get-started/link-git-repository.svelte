@@ -89,7 +89,6 @@
     </svg>
     Continue with GitHub
   </LinkButton>
-  <!-- <a href="https://gitpod.io/new" class="btn btn--bitbucket"> -->
   <LinkButton
     size="large"
     variant="unstyled"
@@ -105,7 +104,6 @@
     </svg>
     Continue with Bitbucket
   </LinkButton>
-  <!-- </a> -->
   <!-- <a href="#" class="link--light-grey">Third-party providers ↗</a> -->
 </div>
 <p class="text-large">

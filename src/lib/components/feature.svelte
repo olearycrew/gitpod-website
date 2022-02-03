@@ -82,12 +82,12 @@
         class:hidden={!moreButton && !secondaryButton}
       >
         {#if moreButton}
-          <a
+          <LinkButton
             href={moreButton.href}
-            class={`btn-${moreButton.type || "primary"}`}
-          >
-            {moreButton.text}
-          </a>
+            size="medium"
+            variant={moreButton.type || "primary"}
+            >{moreButton.text}
+          </LinkButton>
         {/if}
         {#if secondaryButton}
           <LinkButton
