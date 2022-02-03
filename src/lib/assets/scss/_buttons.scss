@@ -2,15 +2,6 @@
 /* --- Buttons & Links that look like buttons--- */
 /* --------------------------------------------- */
 /* Unique buttons */
-.btn-green {
-  background-color: var(--transparent-green);
-  color: var(--green);
-}
-.btn-green:hover,
-.btn-green:focus {
-  background-color: var(--green);
-  color: var(--off-vhite);
-}
 
 .btn-otherbrand {
   display: flex;

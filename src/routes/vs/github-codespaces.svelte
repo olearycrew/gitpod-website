@@ -107,7 +107,8 @@
         text: "More on GCP carbon neutral",
       },
     }}
-    btnClassNames="btn-green mt-x-small"
+    variant="cta"
+    btnClassNames=" mt-x-small"
     class="mx-micro mb-micro"
     headingLevel="h2"
   />
