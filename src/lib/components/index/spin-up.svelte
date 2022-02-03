@@ -34,15 +34,21 @@
       Bitbucket projects to easily spin up a dev environment with a single
       click.
     </p>
-    <div class="buttons-wrapper">
+    <div class="buttons-wrapper fl">
       {#each buttons as { href, icon, text }}
         <a
           {href}
           target="_blank"
           rel="noopener"
-          class="btn-otherbrand text-medium"
+          class="text-p-medium leading-[150%] flex items-center px-macro py-3 justify-center bg-white rounded-xl text-black shadow-light hover:bg-off-white focus:bg-off-white"
         >
-          <img src={`/${icon}`} alt={text} width="24" height="24" />
+          <img
+            class="inline-block h-6 w-6 mr-2"
+            src={`/${icon}`}
+            alt={text}
+            width="24"
+            height="24"
+          />
           {text}
         </a>
       {/each}
