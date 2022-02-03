@@ -4,6 +4,7 @@ excerpt: In a bake-off, customer.io chose Gitpod over Codespaces due to ephemera
 slug: customer-io
 image: teaser.png
 date: Thursday, 3 Feburary 2022 03:00:00 UTC
+availibility: false
 ---
 
 <script lang="ts" context="module">

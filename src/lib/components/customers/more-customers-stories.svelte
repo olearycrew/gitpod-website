@@ -1,15 +1,15 @@
 <script lang="ts">
   import { page, session } from "$app/stores";
-  import MoreArticles from "../more-articles.svelte";
+  import Stories from "./stories.svelte";
 
   const recentPosts = $session.customers.slice(0, 4);
   $: recentCustomersWithoutCurrent = recentPosts
     .filter((customer: any) => $page.url.pathname.indexOf(customer.slug) === -1)
-    .slice(0, 3);
+    .slice(0, 3)
+    .filter((customer: any) => customer.availibility !== false);
 </script>
 
-<MoreArticles
+<Stories
   title="More Customer Stories"
-  type="customers"
-  posts={recentCustomersWithoutCurrent}
+  customers={recentCustomersWithoutCurrent}
 />

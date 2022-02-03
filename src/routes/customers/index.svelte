@@ -8,15 +8,14 @@
 </script>
 
 <script lang="ts">
-  import PostPreview from "$lib/components/blog/post-preview.svelte";
   import CompanyBenefits from "$lib/components/customers/company-benefits.svelte";
+  import Stories from "$lib/components/customers/stories.svelte";
   import Explore from "$lib/components/explore.svelte";
   import Hero from "$lib/components/hero.svelte";
   import Testimonials from "$lib/components/index/testimonials.svelte";
   import UsedBy from "$lib/components/index/used-by.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import Quotes from "$lib/components/quotes.svelte";
-  import SectionCommon from "$lib/components/section-common.svelte";
   import SectionFeatures from "$lib/components/section-features.svelte";
   import Section from "$lib/components/section.svelte";
   import { developFeature, quotes, benefits } from "$lib/contents/customers";
@@ -68,35 +67,12 @@
   type="box"
 />
 
-<SectionCommon
+<Stories
   title="Featured Customer Stories"
   text="Read how our customers improved their development workflows"
   id="stories"
->
-  <div
-    slot="content"
-    class="grid justify-center md:grid-cols-2 gap-xx-small mx-auto mt-small"
-    style="max-width: 860px"
-  >
-    {#each customers as { title, excerpt, image, slug }}
-      <PostPreview
-        post={{
-          title,
-          excerpt,
-          slug,
-          image,
-          teaserImage: image,
-        }}
-        headlineOrder="h3"
-        type="customers"
-        isMostRecent={true}
-        class="max-w-sm"
-        teaserHeightClass="h-80"
-        availability={!(slug === "customer-io")}
-      />
-    {/each}
-  </div>
-</SectionCommon>
+  {customers}
+/>
 
 <UsedBy title="Trusted by +500k developers" />
 
