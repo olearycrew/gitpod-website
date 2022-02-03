@@ -37,14 +37,19 @@
     alt="Gitpod Kumquat"
     class="kumquat-left"
   />
-  <img src="/svg/quotation-mark.svg" alt="Quotation Mark" />
+  <img src="/svg/quotation-mark.svg" alt="Left Quotation Mark" />
   <div class="mt-x-small">
     <p class="h3 text-black font-bold">
       {quote}
+      <img
+        src="/svg/quotation-mark.svg"
+        alt="Quotation Mark"
+        class="inline-block rotate-180 -translate-y-2"
+      />
     </p>
     <p class="mt-x-small">
       <span class="font-semibold text-black">{name},</span>
-      {jobTitle} <span class="font-bold">@{company}</span>
+      {jobTitle} at <span class="font-bold">{company}</span>
     </p>
   </div>
 

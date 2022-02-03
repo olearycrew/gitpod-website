@@ -19,7 +19,7 @@ export const benefits = [
 export const quotes: Quote[] = [
   {
     text: "Gitpod has been instrumental to our ability to scale so quickly",
-    author: "François Rutiy",
+    author: "François Ruty",
     jobTitle: "CTO",
     company: "Shares.io",
     companyLogo: {

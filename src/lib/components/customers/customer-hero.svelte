@@ -33,7 +33,8 @@
   <div class="lg:mr-small mb-small lg:mb-0">
     <header class="max-w-3xl">
       <p class="flex items-center h5 font-bold text-light-grey mb-xx-small">
-        <img src={logo.src} alt={logo.alt} class="w-10 mr-micro" /> Customer story
+        <img src={logo.src} alt={logo.alt} class="h-5 mr-micro" />
+        <span>Customer story</span>
       </p>
       <h1 class="h1">{title}</h1>
     </header>
