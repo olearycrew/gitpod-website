@@ -2,12 +2,12 @@ export type Quote = {
   text: string;
   author: string;
   jobTitle: string;
-  company: string;
+  company?: string;
   companyLogo: {
     src: string;
     alt: string;
   };
-  img: {
+  img?: {
     src: string;
     alt: string;
   };

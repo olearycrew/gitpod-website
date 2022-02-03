@@ -20,15 +20,41 @@ export const quotes: Quote[] = [
   {
     text: "Gitpod has been instrumental to our ability to scale so quickly",
     author: "François Ruty",
-    jobTitle: "CTO",
-    company: "Shares.io",
+    jobTitle: "CTO at Shares.io",
     companyLogo: {
       src: "/svg/customers/shares-io.svg",
       alt: "Prisma",
     },
     img: {
-      src: "/images/customers/gitlab.png",
-      alt: "GitLab",
+      src: "/images/customers/shares-io/quote.png",
+      alt: "Shares.io",
+    },
+  },
+  {
+    text: "Gitpod totally changed the development velocity for RedwoodJS—it removed any issues related to configurations of dev environments and made it incredibly easy to contribute. Reviewing pull requests is delightful because they are prebuilt and ready for review!",
+    author: "Tom Preston-Werner",
+    jobTitle:
+      "Tom Preston-Werner, Founder of GitHub & Redwood, former CEO of GitHub",
+    companyLogo: {
+      src: "/images/customers/redwoodjs/logo.png",
+      alt: "Redwoodjs",
+    },
+    img: {
+      src: "/images/customers/redwoodjs/quote.png",
+      alt: "Shares.io",
+    },
+  },
+  {
+    text: "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, aliqua nsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    author: "John Doe",
+    jobTitle: "X at Y",
+    companyLogo: {
+      src: "/svg/customers/customer-io.svg",
+      alt: "Customer.io",
+    },
+    img: {
+      src: "/images/customers/customer-io/quote.png",
+      alt: "Customer.io",
     },
   },
 ];

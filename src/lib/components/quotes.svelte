@@ -8,33 +8,6 @@
   .quotes {
     max-width: 1000px !important;
   }
-
-  .quote {
-    height: 330px;
-
-    @media (max-width: 1040px) {
-      height: 300px;
-    }
-
-    @media (max-width: 890px) {
-      @apply block;
-      height: auto;
-    }
-  }
-
-  .quote .text {
-    @media (max-width: 890px) {
-      height: 230px;
-    }
-
-    @media (max-width: 630px) {
-      height: 270px;
-    }
-
-    @media (max-width: 430px) {
-      height: 310px;
-    }
-  }
 </style>
 
 <div
@@ -57,7 +30,7 @@
       </button>
     {/each}
   </div>
-  <div class="flex mt-xx-small lg:mt-small text-left quote">
+  <div class="flex mt-xx-small lg:mt-small text-left min-h-fit">
     <div>
       <img
         src={selectedQuote.img.src}
@@ -73,7 +46,7 @@
       </p>
 
       <p class="font-bold mt-xx-small">
-        {selectedQuote.author}, {selectedQuote.jobTitle} at {selectedQuote.company}
+        {selectedQuote.author}, {selectedQuote.jobTitle}
       </p>
     </div>
   </div>

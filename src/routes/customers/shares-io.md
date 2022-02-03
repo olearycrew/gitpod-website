@@ -3,7 +3,7 @@ title: Scaling from 3 to 45 engineers in 5 months
 excerpt: Gitpod helped engineers at Shares.io become more productive and focused. It cut the onboarding process for new hires down to 10 minutes. Gitpod also removed any friction in dev environment management and  day to day collaboration, saving every engineer half a day per week.
 slug: shares-io
 image: teaser.png
-date: Thursday, 3 Feburary 2022 04:00:00 UTC
+date: Thursday, 3 Feburary 2022 06:00:00 UTC
 ---
 
 <script lang="ts" context="module">
@@ -26,7 +26,7 @@ logo={{
 		alt: "shares.io"
 	}}
 card={{
-		image: "/images/customers/shares-io/hero.png",
+		image: "/images/customers/shares-io/teaser.png",
 		details:{
 			industry: "Finance",
 			plan: "Team Unlimited, SaaS",
