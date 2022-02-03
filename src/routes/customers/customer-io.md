@@ -30,7 +30,10 @@ card={{
 		details:{
 			industry: "Marketing",
 			plan: "Startup, SaaS",
-			noOfEngineers: "40+",
+			people: {
+				title: "Engineers",
+				text: "45+"
+			},
 			website: {
 				href: "https://customer.io",
 				text: "customer.io",

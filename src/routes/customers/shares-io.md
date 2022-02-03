@@ -20,17 +20,20 @@ date: Thursday, 3 Feburary 2022 04:00:00 UTC
 
 <CustomerHero
 title="Scaling from 3 to 45 engineers in 5 months on the back of Gitpod"
-text="Gitpod helped engineers at Shares.io become more productive and focused. It removed any friction in the onboarding process, dev environment management and the day to day collaboration. "
+text="Gitpod helped engineers at Shares.io become more productive and focused. It removed any friction in the onboarding process, dev environment management and the day to day collaboration."
 logo={{
 		src: "/svg/customers/shares-io.svg",
 		alt: "shares.io"
 	}}
 card={{
-		image: "/images/customers/shares-io/teaser.png",
+		image: "/images/customers/shares-io/hero.png",
 		details:{
 			industry: "Finance",
 			plan: "Team Unlimited, SaaS",
-			noOfEngineers: "45+",
+			people: {
+				title: "Engineers",
+				text: "45+"
+			},
 			website: {
 				href: "https://shares.io/",
 				text: "shares.io",

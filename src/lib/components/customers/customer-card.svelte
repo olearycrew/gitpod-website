@@ -4,7 +4,10 @@
     details: {
       industry: string;
       plan: string;
-      noOfEngineers: string;
+      people: {
+        title: string;
+        text: string;
+      };
       website: {
         href: string;
         text: string;
@@ -26,7 +29,7 @@
 </style>
 
 <div
-  class="rounded-2xl bg-off-white shadow-xl overflow-hidden max-w-xs sm:max-w-sm"
+  class="rounded-2xl bg-off-white shadow-xl overflow-hidden max-w-xs sm:max-w-sm min-w-fit"
 >
   <div
     class="h-60 bg-cover bg-center "
@@ -44,8 +47,8 @@
       <p>{details.plan}</p>
     </div>
     <div>
-      <p class="h5">Engineers</p>
-      <p>{details.noOfEngineers}</p>
+      <p class="h5">{details.people.title}</p>
+      <p>{details.people.text}</p>
     </div>
     <div>
       <p class="h5">Website</p>

@@ -19,21 +19,25 @@ date: Thursday, 3 Feburary 2022 01:00:00 UTC
 </script>
 
 <CustomerHero
-title="Lorem ipsum dolor sit amet Lorem ipsum"
-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+title="How Gitpod increases Redwood’s development velocity by removing the friction to contribute"
+text="RedwoodJS is the latest open source project of Tom Preston-Werner, the Founder and former CEO of GitHub. Gitpod removed the friction of building on and contributing to Redwood, helping them to build an engaging community."
+textMaxWClass="max-w-4xl"
 logo={{
-		src: "/svg/customers/customer-io-mark.svg",
+		src: "/images/customers/redwoodjs/logo.png",
 		alt: "customer.io"
 	}}
 card={{
-		image: "/images/customers/customer-io/teaser.png",
+		image: "/images/customers/redwoodjs/hero.png",
 		details:{
-			industry: "Marketing",
-			plan: "Startup, SaaS",
-			noOfEngineers: "40+",
+			industry: "Open Source Software",
+			plan: "Professional Open Source, SaaS",
+			people: {
+				title: "Contributors",
+				text: "190+"
+			},
 			website: {
-				href: "https://customer.io",
-				text: "customer.io",
+				href: "https://redwoodjs.com/",
+				text: "redwoodjs.com",
 			}
 		}
 	}}
