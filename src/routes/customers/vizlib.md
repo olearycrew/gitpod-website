@@ -1,7 +1,7 @@
 ---
-title: Open Source
+title: Vizlib
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-slug: gitlab
+slug: vizlib
 image: teaser.png
 ---
 
