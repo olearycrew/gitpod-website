@@ -40,12 +40,7 @@
   <img src="/svg/quotation-mark.svg" alt="Left Quotation Mark" />
   <div class="mt-x-small">
     <p class="h3 text-black font-bold">
-      {quote}
-      <img
-        src="/svg/quotation-mark.svg"
-        alt="Quotation Mark"
-        class="inline-block rotate-180 -translate-y-2"
-      />
+      {quote}”
     </p>
     <p class="mt-x-small">
       <span class="font-semibold text-black">{name},</span>
