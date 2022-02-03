@@ -21,7 +21,7 @@
   class:bg-sand-dark={!isMostRecent}
   class="flex flex-col max-w-sm lg:max-w-none {layout === 'column'
     ? ''
-    : 'lg:flex-row lg:max-w-6xl mx-auto'} rounded-xl bg-off-white"
+    : 'lg:flex-row lg:max-w-6xl mx-auto'} rounded-xl bg-off-white transition-all duration-200 hover:shadow-normal focus:shadow-normal"
   data-analytics={`{"context":"grid","variant":"preview"}`}
 >
   {#if isMostRecent}
